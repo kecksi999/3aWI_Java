@@ -9,6 +9,7 @@ private int numberOfDoors;
     }
 
     public int getNumberOfDoors() {
+        System.out.println(brand);
         return numberOfDoors;
     }
 

@@ -1,13 +1,16 @@
 public class Figur {
-    private double xpos = 100.0, ypos = 100.0;
+    protected double xpos = 100.0, ypos = 100.0;
+
     public Figur(double x, double y) {
         if (x >= 0 && y >= 0) {
             xpos = x;
             ypos = y;
         }
-        System.out.println("Figur-Konstruktor");
     }
-    public Figur() {
-        System.out.println("Figur-Konstruktor");
+
+    public Figur() {}
+
+    public void wo() {
+        System.out.println("\nOben links: (" + xpos + ", " + ypos + ") ");
     }
 }

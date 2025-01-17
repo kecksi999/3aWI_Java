@@ -1,8 +1,8 @@
-public class FigurenDemo {
-    public static void main(String[] args) {
-        Figur fig = new Figur(50.0, 50.0);
-        System.out.println("Figur erstellt: " + fig);
-        Kreis krs = new Kreis(10.0, 10.0, 5.0);
-        System.out.println("Kreis erstellt: " + krs);
+class FigurenDemo {
+    public static void main(String[] ars) {
+        Figur f = new Figur(10.0, 20.0);
+        f.wo();
+        Kreis k = new Kreis(50.0, 100.0, 25.0);
+        k.wo();
     }
-}
+} 
