@@ -1,5 +1,5 @@
 public class Clownfish extends Fish {
-    String colorPattern;
+    private String colorPattern;
 
     public Clownfish(String name, double size, String colorPattern) {
         super(name, size);
@@ -8,11 +8,15 @@ public class Clownfish extends Fish {
 
     @Override
     public void swim() {
-        System.out.println(name + " schwimmt verspielt, wie ein Clownfisch.");
+        System.out.println(getName() + " schwimmt verspielt, wie ein Clownfisch.");
     }
 
     @Override
     public void describe() {
-        System.out.println(name + " ist " + size + " cm groß. Farbmuster: " + colorPattern);
+        System.out.println(getName() + " ist " + getSize() + " cm groß. Farbmuster: " + colorPattern);
+    }
+
+    public String getColorPattern() {
+        return colorPattern;
     }
 }

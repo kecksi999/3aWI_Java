@@ -1,5 +1,5 @@
 public class Shark extends Fish {
-    int teeth;
+    private int teeth;
 
     public Shark(String name, double size, int teeth) {
         super(name, size);
@@ -8,7 +8,7 @@ public class Shark extends Fish {
 
     @Override
     public void swim() {
-        System.out.println(name + " schwimmt schnell, weil es ein Hai ist!");
+        System.out.println(getName() + " schwimmt schnell, weil es ein Hai ist!");
     }
 
     @Override
@@ -17,6 +17,6 @@ public class Shark extends Fish {
     }
 
     public void describe(String detail) {
-        System.out.println(name + " ist " + size + " cm groß. Detail: " + detail);
+        System.out.println(getName() + " ist " + getSize() + " cm groß. Detail: " + detail);
     }
 }
