@@ -1,11 +1,11 @@
-import java.util.Scanner;
+
 
 public class BankAccount {
     private String owner;
     private double balance;
     private static String bankName = "Sigma";
 
-    Scanner scanner = new Scanner(System.in);
+
 
     public BankAccount(String owner, double balance) {
         this.owner = owner;
@@ -36,4 +36,29 @@ public class BankAccount {
         BankAccount.bankName = bankName;
     }
 
+    public void deposit(double amount) {
+        if (amount > 0) {
+            this.balance += amount;
+            System.out.println("Geld eingezahlt. Neue Balance " + this.balance + "€");
+        } else {
+        }
+    }
+
+    public void withdraw(double amount) {
+        if (amount > 0 && this.balance >= amount) {
+            this.balance -= amount;
+            System.out.println("Geld abgehoben. Neue Balance " + this.balance + "€");
+        } else {
+        }
+    }
+
+    public void displayBalance() {
+        System.out.println("Jetzige Balance " + this.balance + "€");
+    }
+
+    public static void changeBankName(String newName) {
+        bankName = newName;
+        System.out.println("Neuer Bankname: " + bankName);
+    }
 }
+
