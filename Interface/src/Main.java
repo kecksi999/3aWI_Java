@@ -11,8 +11,9 @@ public class Main {
         Product Jeans = new Pants("Jeans",20);
         Product Shirt = new Shirts("T-Shirt",10);
 
-
-
+        productList.add(Shoe);
+        productList.add(Jeans);
+        productList.add(Shirt);
 
 
         while(true) {
@@ -21,15 +22,16 @@ public class Main {
             System.out.println("2. Add Product");
             System.out.println("3. Exit");
 
+
+
             int choice = scanner.nextInt();
 
-            switch (choice) {
-                default:
-                    viewProducts(productList);
+            if (choice == 1) {
+                viewProducts(productList);
             }
         }
-
     }
+
 
     public static void viewProducts(List<Product> productList) {
         System.out.println("Verfügbare Produkte:");
