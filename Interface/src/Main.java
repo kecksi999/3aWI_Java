@@ -7,10 +7,11 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         List<Product> productList = new ArrayList<>();
 
-        // Beispielprodukte hinzufügen
-        productList.add(new Shoe("Nike", 120));
-        productList.add(new Pants("Jeans", 89));
-        productList.add(new Shirts("T-Shirt", 14));
+        Product Shoe = new Shoe("Nike",120);
+        Product Jeans = new Pants("Jeans",20);
+        Product Shirt = new Shirts("T-Shirt",10);
+
+
 
 
 
