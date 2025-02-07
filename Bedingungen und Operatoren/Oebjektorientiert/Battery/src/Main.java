@@ -8,7 +8,7 @@ public class Main {
         RemoteControl remote = new RemoteControl(battery1, battery2);
 
         remote.turnOn();
-        System.out.println(remote.getStatus() + "%");
+        System.out.println(remote.getStatus() + "%"); //newly written to show luca
 
 
         remote.turnOff();

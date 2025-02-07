@@ -8,7 +8,7 @@ public class RemoteControl {
 
     public Battery getBattery1() {
         return battery1;
-    }
+    } //Luca zur Erklärung
 
     public void setBattery1(Battery battery1) {
         this.battery1 = battery1;
