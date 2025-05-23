@@ -2,18 +2,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class Main2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         List<Product> productList = new ArrayList<>();
 
-        Product Shoe = new Shoe("Nike",120);
-        Product Jeans = new Pants("Jeans",20);
-        Product Shirt = new Shirts("T-Shirt",10);
+        Product Shoe = new Shoe1("Nike",120);
+        Product Jeans = new MobilePhone2("Jeans",20);
 
         productList.add(Shoe);
         productList.add(Jeans);
-        productList.add(Shirt);
+
 
 
         while(true) {
